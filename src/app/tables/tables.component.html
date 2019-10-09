@@ -1,0 +1,25 @@
+<div class="container" style="margin-top: 25px; margin-left: auto; margin-left: auto">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                <th *ngFor="let col of cols">
+                    {{ col.header}}
+                </th>
+                </thead>
+                <tbody>
+                <tr *ngFor="let value of data">
+                    <td class="" *ngFor="let col of cols">
+                        {{ value[col.field] }}
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <th *ngFor="let col of cols">
+                    {{ col.header}}
+                </th>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
